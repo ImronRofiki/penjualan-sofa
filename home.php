@@ -175,7 +175,7 @@ $result = $conn->query($query);
     <div class="hero">
         <h1>SELAMAT DATANG DI TOKO BINTANG JAYA SOFA...</h1>
         <h2>SILAHKAN BERBELANJA</h2>
-        <form class="search-bar" action="home.php" method="GET">
+        <form class="search-bar" action="https://penjualan-sofa.gunawans.web.id/home.php" method="GET">
             <input type="text" name="q" placeholder="Cari produk..."
                 value="<?php echo isset($_GET['q']) ? htmlspecialchars($_GET['q']) : ''; ?>">
             <button type="submit">Cari</button>
@@ -192,7 +192,7 @@ $result = $conn->query($query);
                     <img src="admin/uploads/' . htmlspecialchars($row['foto_barang']) . '" alt="' . htmlspecialchars($row['nama_barang']) . '">
                     <h3>' . htmlspecialchars($row['nama_barang']) . '</h3>
                     <p>Rp. ' . number_format($row['harga_barang'], 2, ',', '.') . '</p>
-                    <a href="detail-produk.php?id=' . $row['id'] . '">
+                    <a href="https://penjualan-sofa.gunawans.web.id/detail-produk.php?id=' . $row['id'] . '">
                         <button class="btn-view">Lihat</button>
                     </a>
                 </div>

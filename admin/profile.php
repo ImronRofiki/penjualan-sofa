@@ -3,7 +3,7 @@ session_start();
 
 // Redirect jika pengguna belum login
 if (!isset($_SESSION['username']) || !isset($_SESSION['email'])) {
-    header('Location: login.php');
+    header('Location: https://penjualan-sofa.gunawans.web.id/login.php');
     exit();
 }
 

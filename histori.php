@@ -116,7 +116,7 @@ $result = $stmt->get_result();
                                 <td><?= htmlspecialchars($row['tanggal_pembelian']); ?></td>
                                 <td>
                                     <?php if ($row['status'] != 'Approved' && $row['status'] != 'Cancelled'): ?>
-                                        <form action="batal.php" method="GET">
+                                        <form action="https://penjualan-sofa.gunawans.web.id/batal.php" method="GET">
                                             <input type="hidden" name="pembelian_id" value="<?= $row['id']; ?>">
                                             <button type="submit" class="btn btn-danger btn-sm">Batal</button>
                                         </form>
